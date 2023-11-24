@@ -1,0 +1,102 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(255, 255, 255);
+}
+p1{
+  font-size: 12px;
+}
+p2{
+  color: yellow;
+  font-size: 10px;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  animation: slide 4s infinite;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+  color: white;
+}
+
+.section__text p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(18px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+@keyframes colorChange {
+  0% {
+      color: red;
+  }
+  50% {
+      color: blue;
+  }
+  100% {
+      color: red;
+  }
+}
+h1{
+  animation: colorChange 3s infinite;
+}
